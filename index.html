@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Dharma Bhakti Kostrad — Jejak Pengabdian Prajurit</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 (Free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== 1. NAVBAR ===== -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-landmark"></i> Dharma Bhakti Kostrad
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#hero" class="nav-link">Beranda</a></li>
+                    <li><a href="#about" class="nav-link">Sejarah</a></li>
+                    <li><a href="#services" class="nav-link">Koleksi</a></li>
+                    <li><a href="#features" class="nav-link">Fasilitas</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimoni</a></li>
+                    <li><a href="#pricing" class="nav-link">Harga</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#contact" class="nav-link">Kontak</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="btn btn-primary nav-cta">Jadwal Kunjungan</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== 2. HERO SECTION ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-text animate-on-scroll">
+                <span class="hero-tag">Museum Sejarah TNI</span>
+                <h1>Museum Dharma Bhakti<br><span class="highlight">Kostrad</span></h1>
+                <p class="hero-subtitle">Jejak Pengabdian dan Kesetiaan Prajurit Kostrad Sepanjang Masa</p>
+                <p>Gedung bersejarah tempat Mayjen Soeharto merancang strategi penumpasan G30S/PKI. Kini menjadi museum yang menyimpan ribuan koleksi perjuangan prajurit Kostrad dari masa ke masa.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Jadwalkan Kunjungan</a>
+                    <a href="#services" class="btn btn-outline">Lihat Koleksi</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="8">0</span>
+                        <span class="stat-label">Ruang Koleksi</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="64">0</span>
+                        <span class="stat-label">Tahun Sejarah</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="10">0</span>
+                        <span class="stat-label">Koleksi Istimewa</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">Gratis</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image animate-on-scroll">
+                <!-- SVG Ilustrasi Museum -->
+                <svg viewBox="0 0 500 380" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Langit senja -->
+                    <rect width="500" height="380" fill="#faf6f0" rx="10"/>
+                    <!-- Sky gradient -->
+                    <defs>
+                        <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#ffedd5"/>
+                            <stop offset="100%" stop-color="#faf6f0"/>
+                        </linearGradient>
+                        <linearGradient id="wallGrad" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#d4c9b0"/>
+                            <stop offset="100%" stop-color="#c4b89e"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="500" height="140" fill="url(#skyGrad)"/>
+                    <!-- Matahari senja -->
+                    <circle cx="420" cy="80" r="35" fill="#D4A844" opacity="0.4"/>
+                    <circle cx="420" cy="80" r="25" fill="#D4A844" opacity="0.6"/>
+                    <circle cx="420" cy="80" r="15" fill="#D4A844"/>
+                    <!-- Tanah / halaman -->
+                    <rect x="0" y="340" width="500" height="40" fill="#2d5016" opacity="0.15"/>
+                    <rect x="0" y="345" width="500" height="35" fill="#2d5016" opacity="0.1"/>
+                    <!-- Bangunan Museum -->
+                    <rect x="100" y="130" width="300" height="210" fill="url(#wallGrad)" stroke="#8B6914" stroke-width="2" rx="4"/>
+                    <!-- Atap segitiga (pedimen) -->
+                    <polygon points="100,130 250,60 400,130" fill="#8B6914" stroke="#6d5210" stroke-width="2"/>
+                    <!-- Atap segitiga dalam -->
+                    <polygon points="110,128 250,72 390,128" fill="#faf6f0" stroke="#8B6914" stroke-width="1"/>
+                    <!-- Tiang-tiang depan -->
+                    <rect x="120" y="130" width="12" height="210" fill="#d4c9b0" stroke="#8B6914" stroke-width="1"/>
+                    <rect x="180" y="130" width="12" height="210" fill="#d4c9b0" stroke="#8B6914" stroke-width="1"/>
+                    <rect x="308" y="130" width="12" height="210" fill="#d4c9b0" stroke="#8B6914" stroke-width="1"/>
+                    <rect x="368" y="130" width="12" height="210" fill="#d4c9b0" stroke="#8B6914" stroke-width="1"/>
+                    <!-- Pintu utama -->
+                    <rect x="210" y="230" width="80" height="110" fill="#2d5016" rx="2"/>
+                    <rect x="218" y="238" width="28" height="100" fill="#3a6e1c" rx="1"/>
+                    <rect x="254" y="238" width="28" height="100" fill="#3a6e1c" rx="1"/>
+                    <rect x="240" y="278" width="20" height="20" fill="#D4A844" opacity="0.5"/>
+                    <!-- Jendela kiri -->
+                    <rect x="138" y="160" width="34" height="50" fill="#3a6e1c" rx="2" opacity="0.7"/>
+                    <rect x="136" y="158" width="38" height="54" fill="none" stroke="#8B6914" stroke-width="2" rx="3"/>
+                    <line x1="155" y1="160" x2="155" y2="210" stroke="#8B6914" stroke-width="1.5"/>
+                    <line x1="138" y1="185" x2="172" y2="185" stroke="#8B6914" stroke-width="1.5"/>
+                    <!-- Jendela kanan -->
+                    <rect x="328" y="160" width="34" height="50" fill="#3a6e1c" rx="2" opacity="0.7"/>
+                    <rect x="326" y="158" width="38" height="54" fill="none" stroke="#8B6914" stroke-width="2" rx="3"/>
+                    <line x1="345" y1="160" x2="345" y2="210" stroke="#8B6914" stroke-width="1.5"/>
+                    <line x1="328" y1="185" x2="362" y2="185" stroke="#8B6914" stroke-width="1.5"/>
+                    <!-- Jendela atas (ventilasi) -->
+                    <rect x="220" y="150" width="60" height="40" fill="#3a6e1c" rx="2" opacity="0.5"/>
+                    <rect x="218" y="148" width="64" height="44" fill="none" stroke="#8B6914" stroke-width="1.5" rx="3"/>
+                    <!-- Ornamen pedimen -->
+                    <circle cx="250" cy="110" r="8" fill="#D4A844" opacity="0.6"/>
+                    <!-- Bendera di kiri -->
+                    <line x1="90" y1="100" x2="90" y2="60" stroke="#8B6914" stroke-width="3"/>
+                    <rect x="90" y="60" width="40" height="25" fill="#ff0000" rx="1"/>
+                    <rect x="90" y="60" width="13.3" height="25" fill="#ffffff"/>
+                    <rect x="90" y="68.3" width="40" height="8.3" fill="#ffffff"/>
+                    <!-- Bendera di kanan -->
+                    <line x1="410" y1="100" x2="410" y2="60" stroke="#8B6914" stroke-width="3"/>
+                    <rect x="370" y="60" width="40" height="25" fill="#2d5016" rx="1"/>
+                    <!-- Pohon kiri -->
+                    <rect x="52" y="270" width="8" height="70" fill="#8B6914"/>
+                    <circle cx="56" cy="255" r="30" fill="#2d5016" opacity="0.6"/>
+                    <circle cx="45" cy="265" r="20" fill="#2d5016" opacity="0.5"/>
+                    <circle cx="68" cy="265" r="22" fill="#2d5016" opacity="0.5"/>
+                    <!-- Pohon kanan -->
+                    <rect x="442" y="270" width="8" height="70" fill="#8B6914"/>
+                    <circle cx="446" cy="255" r="30" fill="#2d5016" opacity="0.6"/>
+                    <circle cx="435" cy="265" r="20" fill="#2d5016" opacity="0.5"/>
+                    <circle cx="458" cy="265" r="22" fill="#2d5016" opacity="0.5"/>
+                    <!-- Plang nama museum -->
+                    <rect x="195" y="200" width="110" height="22" fill="#D4A844" rx="3"/>
+                    <text x="250" y="215" font-family="Poppins, sans-serif" font-size="9" font-weight="700" fill="#2d5016" text-anchor="middle">DHARMA BHAKTI</text>
+                </svg>
+            </div>
+        </div>
+        <!-- Wave separator -->
+        <div class="wave wave-bottom">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0 C300,80 600,0 900,80 L1200,0 L1200,120 L0,120 Z" fill="#faf6f0"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ===== 3. ABOUT SECTION (SEJARAH) ===== -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Sejarah</span>
+                <h2>Cerita di Balik <span class="highlight">Museum</span></h2>
+                <p>Dari Kantor Komisaris Belanda hingga menjadi saksi bisu perjuangan bangsa.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image animate-on-scroll">
+                    <img src="gambar/gambar1.png" alt="Gedung Museum Dharma Bhakti Kostrad">
+                </div>
+                <div class="about-content animate-on-scroll">
+                    <h3>Pengabdian Terbaik Prajurit Kostrad</h3>
+                    <p>Museum Dharma Bhakti Kostrad berdiri di atas bangunan peninggalan Kantor Komisaris Belanda yang dibangun pada tahun <strong>1870</strong>. Setelah lahirnya Kostrad pada <strong>6 Maret 1961</strong>, gedung ini menjadi Kantor Panglima Kostrad pertama, yaitu <strong>Mayjen TNI Soeharto</strong>.</p>
+                    <p>Dari gedung inilah Soeharto merancang strategi penyelamatan Presiden Soekarno, pencarian korban G30S/PKI, dan penumpasan PKI. Museum ini diresmikan pada <strong>4 Maret 1997</strong> oleh Presiden Soeharto dan diberi nama <em>"Dharma Bhakti"</em> yang berarti <strong>pengabdian terbaik prajurit Kostrad</strong>.</p>
+                    <div class="about-features">
+                        <div class="about-feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Dibangun 1870</h4>
+                                <p>Arsitektur kolonial Belanda yang kokoh dan terawat.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Kantor Pangkostrad I</h4>
+                                <p>Tempat Mayjen Soeharto memimpin Kostrad pertama kali.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Diresmikan 1997</h4>
+                                <p>Menjadi museum sejarah perjuangan dan pengabdian.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#services" class="btn btn-primary">Jelajahi Koleksi</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 4. SERVICES SECTION (KOLEKSI) ===== -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Koleksi</span>
+                <h2>Jelajahi <span class="highlight">8 Ruang</span> Museum</h2>
+                <p>Setiap ruang menyimpan cerita dan sejarah perjuangan prajurit Kostrad.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll">
+                    <div class="card-icon">
+                        <i class="fas fa-monument"></i>
+                    </div>
+                    <h3>Serambi Pahlawan</h3>
+                    <p>Dinding marmer berukir nama ratusan prajurit Kostrad yang gugur dalam operasi militer dari Trikora hingga Atambua.</p>
+                    <a href="#" class="card-link">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="card-icon">
+                        <i class="fas fa-chair"></i>
+                    </div>
+                    <h3>Ruang Panglima</h3>
+                    <p>Ruang kerja Pangkostrad I–X dengan meja rapat tempat Soeharto merancang strategi penumpasan G30S/PKI tahun 1965.</p>
+                    <a href="#" class="card-link">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="card-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Ruang Data</h3>
+                    <p>Dokumentasi lengkap pengabdian prajurit Kostrad dalam latihan, operasi kemanusiaan, dan tugas militer dalam/luar negeri.</p>
+                    <a href="#" class="card-link">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="card-icon">
+                        <i class="fas fa-tower-broadcast"></i>
+                    </div>
+                    <h3>Ruang Komunikasi</h3>
+                    <p>Koleksi alat komunikasi yang digunakan Kostrad saat operasi Seroja, Trikora, Dwikora, dan penumpasan G30S/PKI.</p>
+                    <a href="#" class="card-link">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="card-icon">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <h3>Ruang Kaskostrad</h3>
+                    <p>Deretan foto Pangkostrad dan Kaskostrad sepanjang masa serta diorama Batalyon 328 mengucapkan ikrar kesetiaan.</p>
+                    <a href="#" class="card-link">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="card-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Ruang Penghargaan</h3>
+                    <p>Penghargaan tertinggi bagi Pangkostrad I — Jenderal Besar TNI HM. Soeharto. Terdapat diorama evakuasi korban Lubang Buaya.</p>
+                    <a href="#" class="card-link">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 5. FEATURES SECTION ===== -->
+    <section class="features section" id="features">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Fasilitas</span>
+                <h2>Kenapa Harus Berkunjung ke <span class="highlight">Museum Ini</span>?</h2>
+                <p>Nikmati pengalaman wisata sejarah yang edukatif dan berkesan.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-pin"></i>
+                    </div>
+                    <h3>Lokasi Strategis</h3>
+                    <p>Berada di pusat Jakarta, dekat Stasiun Gambir, Monas, dan Istana Negara. Akses sangat mudah.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <h3>Tiket Gratis</h3>
+                    <p>Tidak dipungut biaya masuk. Museum terbuka untuk seluruh masyarakat umum.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-chalkboard-user"></i>
+                    </div>
+                    <h3>Pemandu Ahli</h3>
+                    <p>Tersedia pemandu museum yang siap menjelaskan sejarah setiap ruang dan koleksi secara detail.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>Home Theater</h3>
+                    <p>Nonton film dokumenter G30S/PKI di Home Theater Darma Bhakti Kostrad.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Area Parkir Luas</h3>
+                    <p>Area parkir yang luas dan aman untuk kendaraan roda dua maupun roda empat.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-train"></i>
+                    </div>
+                    <h3>Dekat Transportasi Umum</h3>
+                    <p>Hanya 500 meter dari Stasiun Gambir dan dekat halte TransJakarta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 6. TESTIMONIALS SECTION ===== -->
+    <section class="testimonials section" id="testimonials">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Testimoni</span>
+                <h2>Apa Kata <span class="highlight">Pengunjung</span>?</h2>
+                <p>Kesan dan pengalaman mereka setelah mengunjungi Museum Dharma Bhakti Kostrad.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Sangat terkesan dengan koleksi museum ini. Melihat langsung meja rapat tempat Pak Harto merancang strategi penumpasan G30S/PKI adalah pengalaman yang tak terlupakan. Pemandunya juga ramah dan informatif."</p>
+                    <div class="testimonial-author">
+                        <img src="gambar/gambar1.png" alt="Pak Hadi">
+                        <div>
+                            <h4>Hadi Sumarsono</h4>
+                            <span>Guru Sejarah, Jakarta</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Rekomendasi banget buat anak muda yang ingin belajar sejarah. Tiket gratis, lokasi di pusat kota, dan koleksinya lengkap. Home theater-nya juga seru! Pasti balik lagi."</p>
+                    <div class="testimonial-author">
+                        <img src="gambar/gambar1.png" alt="Bu Rina">
+                        <div>
+                            <h4>Rina Pratiwi</h4>
+                            <span>Mahasiswa, Universitas Indonesia</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Mengajak siswa ke sini untuk study tour. Mereka sangat antusias melihat diorama dan koleksi alat komunikasi. Museum ini benar-benar media pembelajaran sejarah yang hidup."</p>
+                    <div class="testimonial-author">
+                        <img src="gambar/gambar1.png" alt="Pak Didik">
+                        <div>
+                            <h4>Didik Setiawan</h4>
+                            <span>Kepala Sekolah SMP, Bekasi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 7. PRICING SECTION ===== -->
+    <section class="pricing section" id="pricing">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Harga Tiket</span>
+                <h2>Pilih <span class="highlight">Paket Kunjungan</span></h2>
+                <p>Nikmati wisata sejarah dengan harga yang ramah di kantong.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card animate-on-scroll">
+                    <div class="pricing-header">
+                        <h3>Individu</h3>
+                        <p class="pricing-sub">Kunjungan pribadi</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price">Gratis</span>
+                    </div>
+                    <ul class="pricing-list">
+                        <li><i class="fas fa-check"></i> Tiket masuk gratis</li>
+                        <li><i class="fas fa-check"></i> Akses 8 ruang koleksi</li>
+                        <li><i class="fas fa-check"></i> Home Theater</li>
+                        <li><i class="fas fa-check"></i> Parkir gratis</li>
+                        <li class="not-included"><i class="fas fa-times"></i> Pemandu khusus</li>
+                        <li class="not-included"><i class="fas fa-times"></i> Ruang seminar</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-full">Jadwalkan</a>
+                </div>
+                <div class="pricing-card featured animate-on-scroll">
+                    <div class="pricing-badge">Populer</div>
+                    <div class="pricing-header">
+                        <h3>Rombongan</h3>
+                        <p class="pricing-sub">Min. 20 orang</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price">Rp5K</span>
+                        <span class="price-period">/orang</span>
+                    </div>
+                    <ul class="pricing-list">
+                        <li><i class="fas fa-check"></i> Tiket masuk</li>
+                        <li><i class="fas fa-check"></i> Pemandu khusus</li>
+                        <li><i class="fas fa-check"></i> Home Theater</li>
+                        <li><i class="fas fa-check"></i> Parkir gratis</li>
+                        <li><i class="fas fa-check"></i> Sesi foto bersama</li>
+                        <li class="not-included"><i class="fas fa-times"></i> Ruang seminar</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-full">Pilih Paket</a>
+                </div>
+                <div class="pricing-card animate-on-scroll">
+                    <div class="pricing-header">
+                        <h3>Edukasi</h3>
+                        <p class="pricing-sub">Sekolah & kampus</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price">Rp3K</span>
+                        <span class="price-period">/siswa</span>
+                    </div>
+                    <ul class="pricing-list">
+                        <li><i class="fas fa-check"></i> Tiket masuk</li>
+                        <li><i class="fas fa-check"></i> Pemandu edukatif</li>
+                        <li><i class="fas fa-check"></i> Home Theater</li>
+                        <li><i class="fas fa-check"></i> Parkir gratis bus</li>
+                        <li><i class="fas fa-check"></i> Sesi foto bersama</li>
+                        <li><i class="fas fa-check"></i> Ruang diskusi</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-full">Pilih Paket</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 8. FAQ SECTION ===== -->
+    <section class="faq section" id="faq">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">FAQ</span>
+                <h2>Pertanyaan <span class="highlight">Umum</span></h2>
+                <p>Informasi yang sering ditanyakan sebelum berkunjung ke museum.</p>
+            </div>
+            <div class="faq-list animate-on-scroll">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Bagaimana jam operasional museum?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Museum buka setiap hari <strong>Senin hingga Jumat</strong>, pukul <strong>08.00 – 16.00 WIB</strong>. Tutup pada hari Sabtu, Minggu, dan hari libur nasional.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apakah tiket masuk berbayar?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tiket masuk museum <strong>Gratis</strong> untuk seluruh pengunjung. Khusus kunjungan rombongan dan edukasi dikenakan biaya sukarela untuk pemandu dan fasilitas tambahan.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Di mana lokasi museum?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Museum berlokasi di <strong>Jl. Merdeka Timur No. 3, Gambir, Jakarta Pusat</strong>, kompleks Markas Besar Kostrad. Berjarak sekitar 500 meter dari Stasiun Gambir.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apakah tersedia pemandu museum?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya, tersedia pemandu museum yang siap mendampingi dan menjelaskan koleksi. Untuk kunjungan individu, pemandu tersedia terbatas. Disarankan datang pagi hari.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Bolehkah mengambil foto atau video?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pengunjung <strong>diperbolehkan</strong> mengambil foto dan video untuk dokumentasi pribadi. Namun, dilarang menggunakan flash pada area koleksi tertentu dan tidak boleh menyentuh koleksi museum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 9. CONTACT SECTION ===== -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Kontak</span>
+                <h2>Hubungi <span class="highlight">Kami</span></h2>
+                <p>Pesan kunjungan rombongan atau tanyakan informasi lebih lanjut.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-form animate-on-scroll">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+                            <small class="error-message" id="nameError">Nama harus diisi minimal 3 karakter</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+                            <small class="error-message" id="emailError">Masukkan email yang valid</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telepon (opsional)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Contoh: 0812-3456-7890">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                            <small class="error-message" id="messageError">Pesan tidak boleh kosong</small>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Kirim Pesan</button>
+                        <div class="form-success" id="formSuccess">
+                            <i class="fas fa-check-circle"></i> Pesan berhasil dikirim! Tim museum akan menghubungi Anda.
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Alamat</h4>
+                            <p>Jl. Merdeka Timur No. 3, Gambir, Jakarta Pusat 10110</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Telepon</h4>
+                            <p>(021) 3814 7070</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>bintalkostrad@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Jam Operasional</h4>
+                            <p>Senin - Jumat : 08.00 - 16.00 WIB</p>
+                            <p>Sabtu & Minggu : Libur</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-train"></i>
+                        <div>
+                            <h4>Akses Transportasi</h4>
+                            <p>500 m dari Stasiun Gambir | Halte TransJakarta Monas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 10. FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <i class="fas fa-landmark"></i> Dharma Bhakti Kostrad
+                    </a>
+                    <p>Museum Dharma Bhakti Kostrad menyimpan jejak pengabdian dan kesetiaan prajurit Kostrad sepanjang masa. Mari lestarikan sejarah bangsa.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/shorts/sqPPrz3-82I?si=QzM36AyX77CUiWUw" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#hero">Beranda</a></li>
+                        <li><a href="#about">Sejarah</a></li>
+                        <li><a href="#services">Koleksi</a></li>
+                        <li><a href="#features">Fasilitas</a></li>
+                        <li><a href="#pricing">Harga</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Koleksi</h4>
+                    <ul>
+                        <li><a href="#">Serambi Pahlawan</a></li>
+                        <li><a href="#">Ruang Panglima</a></li>
+                        <li><a href="#">Ruang Data</a></li>
+                        <li><a href="#">Ruang Komunikasi</a></li>
+                        <li><a href="#">Ruang Penghargaan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Hubungi Kami</h4>
+                    <p>Dapatkan informasi terbaru tentang acara dan pameran di museum.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Anda" required>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Museum Dharma Bhakti Kostrad. All rights reserved. <i class="fas fa-heart"></i> Untuk bangsa dan negara.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
